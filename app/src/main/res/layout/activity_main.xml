@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@color/colorPrimary"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="1dp" />
+
+   <TextView
+       android:id="@+id/id_titulo"
+       android:layout_width="wrap_content"
+       android:layout_height="0dp"
+       android:layout_marginStart="8dp"
+       android:layout_marginLeft="8dp"
+       android:layout_marginTop="8dp"
+       android:layout_marginEnd="8dp"
+       android:layout_marginRight="8dp"
+       android:text="Primeiros Socorros Serpente"
+       android:textColor="#FFF"
+       android:textSize="24sp"
+       android:textStyle="bold"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.50"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/textView_tipo_Serpentes"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Tipos de Serpentes que temos no Brasil"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_titulo" />
+
+
+    <ImageButton
+        android:id="@+id/btn_cascavel"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cascavel_btn"
+        android:text="Foto Cascavel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_titulo"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <View
+        android:id="@+id/divisor_cascavel"
+        android:layout_width="0dp"
+        android:layout_height="6dp"
+        android:background="@android:color/holo_orange_dark"
+        app:layout_constraintEnd_toEndOf="@+id/btn_cascavel"
+        app:layout_constraintStart_toStartOf="@+id/btn_cascavel"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cascavel" />
+
+    <TextView
+        android:id="@+id/textView_cascavel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Cascavel"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/divisor_cascavel"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cascavel" />
+
+    <ImageButton
+        android:id="@+id/btn_surucucu"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/surucucu_btn"
+        android:text="Foto Surucucu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_cascavel"
+        app:layout_constraintTop_toBottomOf="@+id/textView_cascavel" />
+    <View
+        android:id="@+id/divisor_surucucu"
+        android:layout_width="0dp"
+        android:layout_height="6dp"
+        android:background="@android:color/holo_orange_dark"
+        app:layout_constraintEnd_toEndOf="@+id/btn_surucucu"
+        app:layout_constraintStart_toStartOf="@+id/btn_surucucu"
+        app:layout_constraintTop_toBottomOf="@+id/btn_surucucu" />
+
+    <TextView
+        android:id="@+id/textView_surucucu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Surucucu"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/divisor_surucucu"
+        app:layout_constraintTop_toBottomOf="@+id/btn_surucucu" />
+
+    <ImageButton
+        android:id="@+id/btn_coral"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coral_btn"
+        android:text="Foto Coral"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_surucucu"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <View
+        android:id="@+id/divisor_coral"
+        android:layout_width="0dp"
+        android:layout_height="6dp"
+        android:background="@android:color/holo_orange_dark"
+        app:layout_constraintEnd_toEndOf="@+id/btn_coral"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_coral"
+        app:layout_constraintTop_toBottomOf="@+id/btn_coral" />
+
+    <TextView
+        android:id="@+id/textView_coral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Coral"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/divisor_coral"
+        app:layout_constraintTop_toBottomOf="@+id/btn_coral" />
+
+
+    <ImageButton
+        android:id="@+id/btn_jararaca"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/jararaca_btn"
+        android:text="Foto Jararaca"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_coral"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <View
+        android:id="@+id/divisor_jararaca"
+        android:layout_width="0dp"
+        android:layout_height="6dp"
+        android:background="@android:color/holo_orange_dark"
+        app:layout_constraintEnd_toEndOf="@+id/btn_jararaca"
+        app:layout_constraintStart_toStartOf="@+id/btn_jararaca"
+        app:layout_constraintTop_toBottomOf="@+id/btn_jararaca" />
+
+    <TextView
+        android:id="@+id/textView_jararaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Jararaca"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/divisor_jararaca"
+        app:layout_constraintTop_toBottomOf="@+id/btn_jararaca" />
+
+    <Button
+        android:id="@+id/btn_duvidas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Perguntas Frequentes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView_jararaca"
+        app:layout_constraintTop_toBottomOf="@+id/textView_jararaca"
+        app:layout_constraintVertical_bias="0.191" />
+
+</android.support.constraint.ConstraintLayout>
